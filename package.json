@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "author": "",
   "scripts": {
     "start": "parcel index.html",
     "build": "parcel build index.html",
@@ -13,18 +14,23 @@
     "url": "git+https://github.com/codeforyou-dev/react-features.git"
   },
   "keywords": [],
-  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/codeforyou-dev/react-features/issues"
   },
   "homepage": "https://github.com/codeforyou-dev/react-features#readme",
   "dependencies": {
+    "@headlessui/react": "^2.2.0",
+    "@heroicons/react": "^2.2.0",
+    "@tailwindcss/postcss": "^4.0.4",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-router-dom": "^6.29.0"
   },
   "devDependencies": {
-    "process": "^0.11.10"
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.5.1",
+    "process": "^0.11.10",
+    "tailwindcss": "^4.0.4"
   }
 }

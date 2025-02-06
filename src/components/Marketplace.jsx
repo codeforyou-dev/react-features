@@ -2,8 +2,7 @@ import Posts from '../pages/Posts.jsx';
 const Marketplace = () => {
     return (
         <div>
-            <h1>Marketplace</h1>
-            <p>Welcome to the Marketplace</p>
+           <h1 className="text-3xl font-bold mb-6 text-center">Marketplace</h1> 
             <Posts></Posts>
         </div>
     );

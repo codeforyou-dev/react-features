@@ -17,3 +17,7 @@
 │── package.json       # Dependencies & scripts
 │── .gitignore         # Files to ignore in Git
 │── README.md          # Project documentation
+
+
+
+https://tailwindcss.com/docs/installation/framework-guides/parcel

@@ -3,7 +3,10 @@ import React from "react";
 const PostCard = ({ post }) => {
   console.log('post',post);
   return (
-    <div className="bg-white shadow-lg rounded-2xl p-4 w-full max-w-sm">
+    <div
+    key={post.id}
+    className="bg-white shadow-lg rounded-2xl p-4 w-full max-w-sm transition-transform transform hover:scale-105"
+  >
       {/* <img
         src={post?.image}
         alt={post?.title}
