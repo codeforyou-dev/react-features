@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react';
 const useFetch=(url)=>{
     const [items, setItems] = useState([]);
     const fetchData = async (url) => {
@@ -9,5 +10,7 @@ const useFetch=(url)=>{
     useEffect(() => {
         fetchData(url)
     }, []) 
-    return { posts:items };
+    return { data:items };
 }
+
+export default useFetch;
