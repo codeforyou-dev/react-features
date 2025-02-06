@@ -1,9 +1,16 @@
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './components/Home';
+import About from './components/About';
+import NoMatch from './components/NoMatch';
 const App=()=>{
     return (
-        <div>
-            <h1>Hello, World!</h1>
-            <p>This is a simple React app.</p>
-        </div>
+        <Router>
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/about" element={<About />} />
+                <Route path="*" element={<NoMatch />} />
+            </Routes>
+        </Router>
     );
 }
 export default App;
