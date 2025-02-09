@@ -21,3 +21,4 @@
 
 
 https://tailwindcss.com/docs/installation/framework-guides/parcel
+https://parceljs.org/recipes/react/
