@@ -1,12 +1,12 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Home from './components/Home';
-import About from './components/About';
+import Home from './pages/Home';
+import About from './pages/About';
 import NoMatch from './components/NoMatch';
 import Marketplace from './components/Marketplace';
 import Header from './layout/Header';
 const App=()=>{
     return (
-        <Router>
+        <Router>  
             <Header/>
             <Routes>
                 <Route path="/" element={<Home />} />

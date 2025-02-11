@@ -1,4 +1,4 @@
-import Posts from '../pages/Posts.jsx';
+import Posts from './Posts.jsx';
 const Marketplace = () => {
     return (
         <div>

@@ -16,7 +16,7 @@ import {
     PopoverGroup,
     PopoverPanel,
 } from '@headlessui/react';
-
+import Cart from "../components/Cart";
 const Header=()=>{
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
     const products = [
@@ -56,17 +56,18 @@ const Header=()=>{
                 </div>
                 <PopoverGroup className="hidden lg:flex lg:gap-x-12">
 
-                    <a href="/" className="text-sm/6 font-semibold text-gray-900">
+                    <a href="/" className="text-sm/6 font-semibold text-gray-900 bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition duration-300">
                         Home
                     </a>
-                    <a href="/marketplace" className="text-sm/6 font-semibold text-gray-900">
+                    <a href="/marketplace" className="text-sm/6 font-semibold text-gray-900 bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition duration-300">
                         Marketplace
                     </a>
-                    <a href="/about" className="text-sm/6 font-semibold text-gray-900">
+                    <a href="/about" className="text-sm/6 font-semibold text-gray-900 bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition duration-300">
                         About
                     </a>
                 </PopoverGroup>
                 <div className="hidden lg:flex lg:flex-1 lg:justify-end">
+                <div>{<Cart/>}</div>
                 {isOnline ? (
                         <p className="text-green-500">🌍 You are Online!</p>
                     ) : (
